@@ -1,9 +1,14 @@
 
 #### Beam Search Algorithm
-- A heuristic search algorithm that examines a graph by extending the most promising node in a limited set is known as beam search. 
-- Beam search is a heuristic search technique that always expands the W number of the best nodes at each level. It progresses level by level and moves downwards only from the best W nodes at each level. Beam Search uses breadth-first search to build its search tree. It generates all the successors of the current level’s state at each level of the tree. However, at each level, it only evaluates a W number of states. Other nodes are not taken into account. 
 
-```
+- Beam search is a heuristic search algorithm that explores a graph by expanding the most optimistic node in a limited set. Beam search is an optimization of best-first search that reduces its memory requirements.
+
+- Best-first search is a graph search that orders all partial solutions according to some heuristic. But in beam search, only a predetermined number of best partial solutions are kept as candidates. Therefore, it is a greedy algorithm.
+
+- Beam search uses breadth-first search to build its search tree. At each level of the tree, it generates all successors of the states at the current level, sorting them in increasing order of heuristic cost. However, it only stores a predetermined number (β), of best states at each level called the beamwidth. Only those states are expanded next.
+
+
+```{algorithm}
 Start 
 Take the inputs 
 NODE = Root_Node & Found = False
