@@ -6,16 +6,16 @@ The algorithms provide search solutions by transforming the initial state to the
 
 ##### Terminologies
 Search
-:Searching solves a search issue in a given space step by step. Three major factors can influence a search issue.
+: Searching solves a search issue in a given space step by step. Three major factors can influence a search issue.
 
-Search Space:
-A search space is a collection of potential solutions a system may have.
+Search Space
+: A search space is a collection of potential solutions a system may have.
 
-Start State:
-The jurisdiction where the agent starts the search.
+Start State
+: The jurisdiction where the agent starts the search.
 
-Goal test:
-A function that examines the current state and returns whether or not the goal state has been attained.
+Goal test
+: A function that examines the current state and returns whether or not the goal state has been attained.
 
 
 #### Types of Search Algorithms
@@ -35,7 +35,9 @@ Example: Best-first-search, A* Search etc, Beam Search etc.
 
 
 #### Best First Search
+Best-First Search (BFS) is an informed graph traversal algorithm that explores a graph by selecting the most promising node based on a heuristic function. It combines the advantages of both breadth-first search (BFS) and depth-first search (DFS) algorithms. BFS uses a priority queue to prioritize nodes according to their heuristic values.
 
+The heuristic function provides an estimate of the cost from the current node to the goal node. The algorithm maintains a priority queue of nodes and, at each step, selects the node with the lowest heuristic value as the next node to explore. This makes Best-First Search more efficient in terms of reaching the goal quickly by prioritizing nodes that are likely closer to the goal.
 
 ```{algorithm}
 Best-First-Search(Graph g, Node start)
