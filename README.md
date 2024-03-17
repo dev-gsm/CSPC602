@@ -27,7 +27,7 @@ Example: Breadth-first-search (BFS), Depth-first-Search (DFS) etc.
 ##### Informed Search/Heuristic Search
 The informed search algorithm is more useful for large search space. Informed search algorithm uses the idea of heuristic, so it is also called Heuristic search.
 
-**Heuristics function:** Heuristic is a function which is used in Informed Search, and it finds the most promising path. It takes the current state of the agent as its input and produces the estimation of how close agent is from the goal. The heuristic method, however, might not always give the best solution, but it guaranteed to find a good solution in reasonable time. Heuristic function estimates how close a state is to the goal. It is represented by `h(n)`, an it calculates the cost of an optimal path between the pair of states. The value of the heuristic function is always positive.
+Heuristics function: Heuristic is a function which is used in Informed Search, and it finds the most promising path. It takes the current state of the agent as its input and produces the estimation of how close agent is from the goal. The heuristic method, however, might not always give the best solution, but it guaranteed to find a good solution in reasonable time. Heuristic function estimates how close a state is to the goal. It is represented by `h(n)`, an it calculates the cost of an optimal path between the pair of states. The value of the heuristic function is always positive.
 
 Example: Best-first-search, A* Search etc, Beam Search etc.
 
@@ -39,7 +39,7 @@ Best-First Search (BFS) is an informed graph traversal algorithm that explores a
 
 The heuristic function provides an estimate of the cost from the current node to the goal node. The algorithm maintains a priority queue of nodes and, at each step, selects the node with the lowest heuristic value as the next node to explore. This makes Best-First Search more efficient in terms of reaching the goal quickly by prioritizing nodes that are likely closer to the goal.
 
-```{algorithm}
+```
 Best-First-Search(Graph g, Node start)
     1) Create an empty PriorityQueue
        PriorityQueue pq;
@@ -66,7 +66,7 @@ End procedure
 - Beam search uses breadth-first search to build its search tree. At each level of the tree, it generates all successors of the states at the current level, sorting them in increasing order of heuristic cost. However, it only stores a predetermined number (β), of best states at each level called the beamwidth. Only those states are expanded next.
 
 
-```{algorithm}
+```
 Start 
 Take the inputs 
 NODE = Root_Node & Found = False
