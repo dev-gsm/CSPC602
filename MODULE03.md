@@ -105,5 +105,5 @@ The IDA* algorithm includes the following steps:
 - *Example:* In a planning problem, an AND-OR graph might represent different actions that can be taken to achieve a goal, with AND-nodes representing concurrent actions and OR-nodes representing alternative actions.
 
 #### AO* Algorithm
-
+![AO* Algorithm](./aostar.svg)
 [AO* Algorithm](https://www.geeksforgeeks.org/ao-algorithm-artificial-intelligence/?ref=header_search)
