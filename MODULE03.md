@@ -64,3 +64,46 @@ Once the goal is reached, reconstruct the path by backtracking from the goal nod
 - At each iteration, it limits the search depth based on a threshold, gradually increasing the threshold until the goal is found.
 - IDA* guarantees finding the optimal solution like A* but uses less memory, making it suitable for memory-constrained environments.
 - It sacrifices some efficiency for memory savings compared to A*, especially in domains with high branching factors.
+
+~~~
+The IDA* algorithm includes the following steps:
+
+- Start with an initial cost limit.
+    - The algorithm begins with an initial cost limit, which is usually set to the heuristic cost estimate of the optimal path to the goal node.
+
+- Perform a depth-first search (DFS) within the cost limit.
+    - The algorithm performs a DFS search from the starting node until it reaches a node with a cost that exceeds the current cost limit.
+
+- Check for the goal node.
+    - If the goal node is found during the DFS search, the algorithm returns the optimal path to the goal.
+
+- Update the cost limit.
+    - If the goal node is not found during the DFS search, the algorithm updates the cost limit to the minimum cost of any node that was expanded during the search.
+
+- Repeat the process until the goal is found.
+    - The algorithm repeats the process, increasing the cost limit each time until the goal node is found.
+~~~
+
+#### Problem Decomposition
+
+- Problem decomposition involves breaking down a complex problem into smaller, more manageable sub-problems or components. This technique allows for a systematic approach to understanding and solving the larger problem by focusing on its constituent parts. Here's how it typically works:
+
+- *Identify the Problem:* Clearly define the problem you're trying to solve. This could be a technical issue, a business challenge, or any other complex situation.
+
+- *Break it Down:* Analyze the problem and break it down into smaller, more manageable components. These components should be relatively independent and represent distinct aspects of the problem.
+
+- *Hierarchical Structure:* Organize the components hierarchically, with higher-level components representing broader aspects of the problem and lower-level components representing finer details.
+
+#### Goal Tree
+- A goal tree is a hierarchical representation of goals and subgoals required to achieve a specific objective. It illustrates the relationships between different goals in a tree-like structure.
+- Each node in the tree represents a goal, and the edges represent dependencies or relationships between goals. Goals at higher levels of the tree are typically broader, while goals at lower levels are more specific.
+- *Example:* In a robotics project, the goal tree might include high-level goals like "Navigate to Destination" and lower-level goals like "Avoid Obstacles," "Find Optimal Path," and "Update Position."
+
+#### AND-OR Graph
+- An AND-OR graph is a graphical representation used to model the relationships between different actions or conditions in AI systems. It consists of nodes representing actions or conditions and edges representing dependencies or relationships.
+- Nodes in an AND-OR graph can be labeled as either AND-nodes or OR-nodes. AND-nodes represent a logical AND relationship between their child nodes, meaning all child nodes must be satisfied. OR-nodes represent a logical OR relationship between their child nodes, meaning at least one child node must be satisfied.
+- *Example:* In a planning problem, an AND-OR graph might represent different actions that can be taken to achieve a goal, with AND-nodes representing concurrent actions and OR-nodes representing alternative actions.
+
+#### AO* Algorithm
+
+[AO* Algorithm](https://www.geeksforgeeks.org/ao-algorithm-artificial-intelligence/?ref=header_search)
