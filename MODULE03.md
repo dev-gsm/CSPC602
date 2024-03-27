@@ -84,6 +84,8 @@ The IDA* algorithm includes the following steps:
     - The algorithm repeats the process, increasing the cost limit each time until the goal node is found.
 ~~~
 
+[Example](https://www.geeksforgeeks.org/iterative-deepening-a-algorithm-ida-artificial-intelligence/)
+
 #### Problem Decomposition
 
 - Problem decomposition involves breaking down a complex problem into smaller, more manageable sub-problems or components. This technique allows for a systematic approach to understanding and solving the larger problem by focusing on its constituent parts. Here's how it typically works:
@@ -106,4 +108,5 @@ The IDA* algorithm includes the following steps:
 
 #### AO* Algorithm
 ![AO* Algorithm](./aostar.svg)
-[AO* Algorithm](https://www.geeksforgeeks.org/ao-algorithm-artificial-intelligence/?ref=header_search)
+
+[AO* Algorithm Description and Example](https://www.geeksforgeeks.org/ao-algorithm-artificial-intelligence/?ref=header_search)
