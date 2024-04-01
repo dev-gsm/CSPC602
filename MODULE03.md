@@ -144,3 +144,6 @@ else                         // for Minimizer player
  return minEva
 
 ~~~
+
+[Example](https://www.javatpoint.com/mini-max-algorithm-in-ai)
+
