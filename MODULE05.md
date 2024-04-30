@@ -150,5 +150,5 @@ Backward chaining is commonly used in expert systems, diagnostic systems, planni
 
 
 ## Credit
-- Prepared By **Aaniketh** (6th Semester, CST)
+- Prepared By **Aaniketh** (6th Semester, CST, 2023-24)
 
